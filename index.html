@@ -351,7 +351,15 @@
 			#found-6:checked ~ form #c-3-2:checked ~ .found-6 { display: none; }
 			#found-6:checked ~ form #c-3-2:checked ~ .reset-6 { display: block; }
 
-			#found-1:checked ~ #found-2:checked ~ #found-3:checked ~ #found-4:checked ~ #found-5:checked ~ #found-6:checked ~ form #win {
+			#found-1:checked ~ #found-2:checked ~ #found-3:checked ~ #found-4:checked ~ #found-5:checked ~ #found-6:checked ~ form .selector {
+				display: none;
+			}
+
+			#found-1:checked ~ #found-2:checked ~ #found-3:checked ~ #found-4:checked ~ #found-5:checked ~ #found-6:checked
+			~ form #c-1-1:not(:checked) ~ #c-1-2:not(:checked) ~ #c-1-3:not(:checked)
+			~ #c-2-1:not(:checked) ~ #c-2-2:not(:checked) ~ #c-2-3:not(:checked)
+			~ #c-3-1:not(:checked) ~ #c-3-2:not(:checked) ~ #c-3-3:not(:checked)
+			~ #win {
 				display: block;
 			}
 		</style>
@@ -489,7 +497,9 @@
 			<label class="reset-1" for="reset">
 				<div>Found:</div>
 				<img class="card" src="https://edmdesigner.github.io/memory-game-in-email-poc/assets/card-aol.png"/>
-				Emailhero yoyoyo
+				<p>
+					Email Hero has the power to attach Ads and Analytics links/tags to their proper place in email newsletters. No stat or revenue goes missing while he is on watch.
+				</p>
 			</label>
 
 			<label class="found-2 m" for="found-2">
@@ -641,7 +651,7 @@
 
 			<div id="win">
 				<p>You are on fire! You found all the clues!</p>
-				<img src="./assets/emailhero-logo-burning.gif" width="100%" />	
+				<img src="./assets/emailhero-logo-burning.gif" width="100%" />
 				<p>Can you guess how Email Hero will save Emailville?</p>
 				<p><a href="https://twitter.com/intent/tweet?button_hashtag=asd&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #asd</a></p>
 			</div>
