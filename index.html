@@ -1,7 +1,8 @@
 <html>
 	<head>
 		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 			body {
 				margin: 0;
@@ -12,7 +13,7 @@
 			.header {
 				width: 100%;
 				background: #fafbfc;
-				border-bottom: 1px dotted #01bee6;
+				border-bottom: 1px dotted #33007B;
 			}
 
 			.header td {
@@ -26,6 +27,16 @@
 
 			.wrapper .content {
 				width: 320px;
+			}
+
+			.start-wrapper {
+				width: 100%;
+			}
+
+			.start-wrapper .content {
+				width: 320px;
+				margin: auto;
+				text-align: center;
 			}
 
 			#logo {
@@ -64,7 +75,7 @@
 			}
 
 			.card:hover {
-				border: 1px solid #01bee6;
+				border: 1px solid #33007B;
 			}
 
 			.card-1, .card-2, .card-3, .card-4, .card-5, .card-6 {
@@ -83,6 +94,31 @@
 				display: none;
 				width: 320px;
 			}
+
+			.start-button {
+				padding: 10px;
+				border-radius: 50px;
+				color: #33007B;
+				border: 1px solid #33007B;
+				display: block;
+				width: 150px;
+				margin: 10px auto;
+				text-align: center;
+				transition: all 0.3s;
+			}
+
+			.start-button:hover {
+				background-color: #33007B;
+				color: white;
+			}
+
+
+
+			.wrapper { display: none; }
+
+			#start:checked ~ .wrapper { display: table; }
+			#start:checked ~ .start-wrapper { display: none; }
+
 
 			#win { display: none; }
 
@@ -324,11 +360,28 @@
 		<table class="header">
 			<tr>
 				<td>
-					<h1>Mailmory</h1>
+					<img src="./assets/emailhero-logo.png" style="width: 80%; max-width: 200px;"/>
+					<!--
 					<div>by</div>
 					<a id="logo" href="https://chamaileon.io"><img src="https://edmdesigner.github.io/memory-game-in-email-poc/assets/logo.png" /></a>
-					<p>A CSS-only proof-of-concept memory game that works in email</p>
-					<a href="https://github.com/EDMdesigner/memory-game-in-email-poc">View on Github</a>
+					-->
+				</td>
+			</tr>
+		</table>
+
+		<input id="start" type="checkbox" />
+		<table class="start-wrapper">
+			<tr>
+				<td style="padding: 20px">
+					<table class="content">
+						<tr>
+							<td>
+								<h1>A new hero is coming to town!</h1>
+								<p>Our hero is still quite secretive, but created an <strong>interactive email puzzle</strong> that gives you clues about how they are going to save Emailville!</p>
+								<label for="start" class="start-button"><strong>Start the puzzle!</strong></label>
+							</td>
+						</tr>
+					</table>
 				</td>
 			</tr>
 		</table>
@@ -436,6 +489,7 @@
 			<label class="reset-1" for="reset">
 				<div>Found:</div>
 				<img class="card" src="https://edmdesigner.github.io/memory-game-in-email-poc/assets/card-aol.png"/>
+				Emailhero yoyoyo
 			</label>
 
 			<label class="found-2 m" for="found-2">
@@ -585,7 +639,12 @@
 				<img class="card" src="https://edmdesigner.github.io/memory-game-in-email-poc/assets/card-thunderbird.png"/>
 			</label>
 
-			<div id="win">You won! For more cool stuff, visit <a href="https://chamaileon.io">https://chamaileon.io</a></div>
+			<div id="win">
+				<p>You are on fire! You found all the clues!</p>
+				<img src="./assets/emailhero-logo-burning.gif" width="100%" />	
+				<p>Can you guess how Email Hero will save Emailville?</p>
+				<p><a href="https://twitter.com/intent/tweet?button_hashtag=asd&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #asd</a></p>
+			</div>
 		</form>
 
 		</td></tr></table></td></tr></table>
