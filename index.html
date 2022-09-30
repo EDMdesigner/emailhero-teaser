@@ -5,7 +5,7 @@
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 
 		<link rel="icon" href="assets/favicon.ico">
 
@@ -34,7 +34,8 @@
 				margin: 0;
 				padding: 0;
 
-				font-family: 'Comic Neue', cursive;
+				font-family: 'Bangers', cursive;
+				letter-spacing: 1px;
 			}
 			.header {
 				width: 100%;
@@ -75,8 +76,12 @@
 
 			h1 {
 				text-align: center;
-				font-size: 24px;
+				font-size: 30px;
 				margin-bottom: 0;
+			}
+
+			p {
+				font-size: 20px;
 			}
 
 
@@ -122,6 +127,7 @@
 			}
 
 			.button {
+				font-size: 20px;
 				padding: 10px;
 				border-radius: 50px;
 				color: #33007B;
@@ -451,7 +457,8 @@
 								<p>Our hero is still quite secretive, but their sidekicks created an <strong>interactive email puzzle</strong> that gives you clues about how Email Hero is going to save Emailville!</p>
 								<p>Can you guess how? Tweet your guess using the #SaveEmailVille hashtag to have the chance to win a custom Email Hero cape!</p>
 								<p><strong>You can be an Email Hero as well!</strong></p>
-								<label for="start" class="button"><strong>Start the puzzle!</strong></label>
+								<label for="start" class="button"><strong>START THE PUZZLE!</strong></label>
+								<img width="100%" src="./assets/emailheros.png" />
 							</td>
 						</tr>
 					</table>
@@ -736,8 +743,8 @@
 				<div class="button">CONTINUE</div>
 			</label>
 
-			<div id="win">
-				<p>You are on fire! You found all the clues!</p>
+			<div id="win" style="text-align: center;">
+				<p>You are on fire!</p><p>You found all the clues!</p>
 				<img src="./assets/emailhero-logo-burning.gif" width="100%" />
 				<p>Can you guess how Email Hero will save Emailville? Tweet your guess using the #SaveEmailVille hashtag to have the chance to win a custom Email Hero cape!</p>
 				<p><strong>You can be an Email Hero as well!</strong></p>
